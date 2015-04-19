@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+mkdir -p `pwd`/dist
+chmod 777 `pwd`/dist
+
+pyinstaller -F bin/docker-compose
+mv dist/docker-compose dist/docker-compose-`uname -s`-`uname -m`
+dist/docker-compose-`uname -s`-`uname -m` --version
