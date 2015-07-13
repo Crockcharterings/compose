@@ -16,7 +16,7 @@ First, you define your app's environment with a `Dockerfile` so it can be
 reproduced anywhere:
 
 ```Dockerfile
-FROM python:2.7
+FROM hypriot/rpi-python:latest
 WORKDIR /code
 ADD requirements.txt /code/
 RUN pip install -r requirements.txt
@@ -35,7 +35,7 @@ web:
   ports:
    - "8000:8000"
 db:
-  image: postgres
+  image: hypriot/rpi-redis
 ```
 
 Lastly, run `docker-compose up` and Compose will start and run your entire app.
