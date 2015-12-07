@@ -50,12 +50,7 @@ Compose has commands for managing the whole lifecycle of your application:
 Installation and documentation
 ------------------------------
 
-To install Compose on Raspberry Pi with an installation of the [HypriotOS SD card image including Docker 1.6 or newer](http://blog.hypriot.com/downloads/), run the following commands:
-
-```bash
-curl -L https://github.com/hypriot/compose/releases/download/1.2.0-raspbian/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose && \
-  chmod +x /usr/local/bin/docker-compose
-```
+**Update** Newer versions are built with the [hypriot/arm-compose](https://github.com/hypriot/arm-compose) repo and uploaded to Hypriot's Schatzkiste. Please have a look at the [installation steps](https://github.com/hypriot/arm-compose#installation) over there.
 
 - Full documentation is available on [Docker's website](http://docs.docker.com/compose/).
 - Hop into #docker-compose on Freenode if you have any questions.
